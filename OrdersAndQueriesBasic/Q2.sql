@@ -1,0 +1,1 @@
+﻿ALTER TABLE Orders add shipregion int null

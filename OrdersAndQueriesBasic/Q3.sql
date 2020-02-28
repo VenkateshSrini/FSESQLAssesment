@@ -1,0 +1,1 @@
+﻿ALTER TABLE Orders ALTER COLUMN shipregion TYPE char(8) 
