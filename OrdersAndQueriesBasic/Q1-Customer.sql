@@ -2,7 +2,7 @@
 
 -- DROP TABLE public.customers;
 
-CREATE TABLE public.customers
+CREATE TABLE customers
 (
   customerid character(5) NOT NULL,
   companyname character varying(40) NOT NULL,
@@ -16,7 +16,7 @@ WITH (
   OIDS=FALSE
 );
 
-CREATE TABLE public.orders
+CREATE TABLE orders
 (
   orderid integer NOT NULL,
   customerid character(5) NOT NULL,
