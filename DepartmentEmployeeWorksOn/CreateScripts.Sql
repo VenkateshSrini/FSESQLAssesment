@@ -1,11 +1,4 @@
-CREATE TABLE public.department
-(
-    deptid character(3) COLLATE pg_catalog."default" NOT NULL,
-    deptname character varying(10) COLLATE pg_catalog."default" NOT NULL,
-    locations character varying(30) COLLATE pg_catalog."default",
-    CONSTRAINT department_pkey PRIMARY KEY (deptid)
-)
-CREATE TABLE public.department
+﻿CREATE TABLE public.department
 (
     deptid character(3) COLLATE pg_catalog."default" NOT NULL,
     deptname character varying(10) COLLATE pg_catalog."default" NOT NULL,
@@ -37,7 +30,7 @@ CREATE TABLE public.workson
     empno integer NOT NULL,
     projectid character varying(10) COLLATE pg_catalog."default",
     job character varying(10) COLLATE pg_catalog."default",
-    enterdate date,
+    enterdate date
     
 )
 Alter table workson Add constraint empno_fkey Foreign key (empno)
