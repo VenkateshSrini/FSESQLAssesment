@@ -32,5 +32,10 @@ insert into person (pname,birthdate,currentAge) values ('venkat','1978-04-03',My
 CREATE OR REPLACE PROCEDURE InsertPerson(paramname varchar(30), birthdate timestamp)
 LANGUAGE plpgsql 
 AS $$
-insert into person (pname,birthdate,currentAge) values (paramname,birthdate,MyAgecal(birthdate));
+BEGIN
+INSERT into person (pname,birthdate,currentAge) values (paramname,birthdate,MyAgecal(birthdate));
+END;
 $$;
+CALL InsertPerson('venkat','1978-04-03')
+
+Select * from Person;
